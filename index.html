@@ -86,12 +86,13 @@
   @media (max-width:840px){
     .demo-inner{grid-template-columns:1fr;}
     /* phone pins compact at top; beat copy gets the lower half of the screen, clear of it */
-    .phonewrap{position:sticky;top:0;height:auto;padding:8px 0 12px;order:-1;z-index:10;background:linear-gradient(180deg,var(--bg) 0%,var(--bg) 93%,transparent);}
+    .phonewrap{position:sticky;top:0;height:auto;padding:8px 0 12px;order:-1;z-index:1;}
+    .beats{padding:4vh 0 24vh;position:relative;z-index:20;}
+    .beat{min-height:62vh;justify-content:flex-start;padding-top:1vh;}
+    .beat h2,.beat .body,.beat .quote{text-shadow:0 2px 10px rgba(0,0,0,0.95),0 0 4px rgba(0,0,0,0.85),0 0 22px rgba(0,0,0,0.7);}
     .phone{width:160px;height:334px;border-radius:26px;box-shadow:0 14px 38px rgba(0,0,0,0.55),inset 0 0 0 4px #000;}
     .phone .screen{inset:auto;left:4px;top:4px;width:284px;height:604px;border-radius:36px;font-size:11px;transform:scale(0.535);transform-origin:top left;}
     .notch{width:54px;height:13px;top:6px;}
-    .beat{min-height:62vh;justify-content:flex-start;padding-top:1vh;}
-    .beats{padding:4vh 0 24vh;}
     .beat h2{font-size:20px;}
     .beat .body{font-size:13.5px;}
   }
