@@ -88,11 +88,8 @@
     /* phone pins compact at top; beat copy gets the lower half of the screen, clear of it */
     .phonewrap{position:sticky;top:0;height:auto;padding:8px 0 12px;order:-1;z-index:10;background:linear-gradient(180deg,var(--bg) 0%,var(--bg) 93%,transparent);}
     .phone{width:160px;height:334px;border-radius:26px;box-shadow:0 14px 38px rgba(0,0,0,0.55),inset 0 0 0 4px #000;}
-    .phone .screen{inset:4px;border-radius:22px;font-size:7px;}
+    .phone .screen{inset:auto;left:4px;top:4px;width:284px;height:604px;border-radius:36px;font-size:11px;transform:scale(0.535);transform-origin:top left;}
     .notch{width:54px;height:13px;top:6px;}
-    .apphdr{padding:18px 8px 6px;}
-    .apphdr .t{font-size:10px;}
-    .sbody{padding:6px 7px;height:calc(100% - 46px);}
     .beat{min-height:62vh;justify-content:flex-start;padding-top:1vh;}
     .beats{padding:4vh 0 24vh;}
     .beat h2{font-size:20px;}
